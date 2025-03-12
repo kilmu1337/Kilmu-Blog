@@ -1,6 +1,12 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"KilmuDMA",
+    "subTitle":"Top-Tier DMA Firmware",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
+    "onePageListNum":15,
+    "homeUrl":"https://blog.kilmu.com",
+    "i18n":"EN",
+    "themeMode":"manual",
+    "dayTheme":"light",
+    "nightTheme":"dark_colorblind",
     "GMEEK_VERSION":"last"
 }
