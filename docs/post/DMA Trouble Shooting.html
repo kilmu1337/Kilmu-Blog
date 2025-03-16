@@ -77,14 +77,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h1>General Inspection Process</h1>
 <ol>
-<li>Ensure the flashing process is correct. When flashing, the "ms" following the sector should be in hundreds, <code class="notranslate">not single digits</code>.</li>
+<li>Ensure the flashing process is correct. When flashing, the "ms" following the sector should be in hundreds, <code class="notranslate">not single digits</code>.no</li>
 <li>After flashing, make sure the main pc is completely powered off. Do not directly click reboot.</li>
 <li>After power-off and reboot, the dma card should have a red light continuously on and a green light continuously on.</li>
-<li>Virtualization and VT-d/IOMMU in the main pc BIOS better be disabled.</li>
+<li><code class="notranslate">Virtualization</code> and <code class="notranslate">VT-d/IOMMU</code> in the main pc BIOS better be disabled.</li>
 <li>If has issue when using chair, pls close chair and run speed test. and check step 4 .</li>
 <li>Try to uninstall and rescan in main pc device manager for the emul device.</li>
 <li>If still has some issues, please send screenshots of the main pc Device Manager and the secondary pc speed test logs.</li>
-</ol></div>
+</ol>
+<h1>Solutions for Some Special Cases</h1>
+<h3>How to solve <code class="notranslate">FPGA: TINY PCIe TLP algrithm auto-selected!</code> when run speed test</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f61cc94e-fa2b-45cf-8aae-5131cf9ff4d8"><img src="https://github.com/user-attachments/assets/f61cc94e-fa2b-45cf-8aae-5131cf9ff4d8" alt="Image" style="max-width: 100%;"></a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check if the driver for the emul device in the device manager of the main PC is loaded properly. If the driver is not present, you need to install the corresponding driver. If a yellow exclamation mark is displayed, first try right-clicking on the device in the Device Manager and uninstalling it. Then, right-click and select "Rescan." If it still doesn't work, please check <code class="notranslate">Virtualization</code> and <code class="notranslate">VT-d/IOMMU</code> in the main pc BIOS</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> If using the activator, check if run activator when dma on data port.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Double click the emul device in device manager, check -&gt;Power Management(if has) -&gt;Untick "Allow this computer to turn off this device to save power") to avoid the BME OFF by main pc os.</li>
+</ul>
+<p>to be done</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
