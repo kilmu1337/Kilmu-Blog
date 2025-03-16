@@ -10,9 +10,11 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="1.">
+<meta name="description" content="# General Inspection Process
+1.">
 <meta property="og:title" content="DMA Trouble Shooting">
-<meta property="og:description" content="1.">
+<meta property="og:description" content="# General Inspection Process
+1.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://blog.kilmu.com/post/DMA%20Trouble%20Shooting.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/155318836?v=4">
@@ -73,13 +75,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><ol>
+<div class="markdown-body" id="postBody"><h1>General Inspection Process</h1>
+<ol>
 <li>Ensure the flashing process is correct. When flashing, the "ms" following the sector should be in hundreds, <code class="notranslate">not single digits</code>.</li>
 <li>After flashing, make sure the main pc is completely powered off. Do not directly click reboot.</li>
 <li>After power-off and reboot, the dma card should have a red light continuously on and a green light continuously on.</li>
 <li>Virtualization and VT-d/IOMMU in the main pc BIOS better be disabled.</li>
 <li>If has issue when using chair, pls close chair and run speed test. and check step 4 .</li>
-<li>Try to uninstall and rescan in main oc device manager for the emul device.</li>
+<li>Try to uninstall and rescan in main pc device manager for the emul device.</li>
 <li>If still has some issues, please send screenshots of the main pc Device Manager and the secondary pc speed test logs.</li>
 </ol></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
