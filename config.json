@@ -9,6 +9,5 @@
     "themeMode":"manual",
     "dayTheme":"light",
     "nightTheme":"dark_colorblind",
-    "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
     "GMEEK_VERSION":"last"
 }
