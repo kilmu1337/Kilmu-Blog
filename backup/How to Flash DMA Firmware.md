@@ -33,7 +33,7 @@ After the driver installation is complete, go to the Flash Tools folder and doub
 
 Once the flashing is complete, **main pc** must **shut down and cut off the power**, then power it on again (do not directly click restart).
 
-- [2] **Third situation:** If **USB To UART+JTAG(Interface 0)** appears in the dropdown menu. 
+- [3] **Third situation:** If **USB To UART+JTAG(Interface 0)** appears in the dropdown menu. 
 
 ![Image](https://github.com/user-attachments/assets/e2c1c606-fbe6-4528-b6b1-4bf02eac846d)
 
