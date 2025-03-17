@@ -80,17 +80,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><h3>What is <code class="notranslate">Pcileech</code>?</h3>
 <p>Currently, all DMA firmware is based on <a href="https://github.com/ufrisk/pcileech-fpga">pcileech-fpga</a>, which is not just a hardware conclusion but also requires software to be adapted to pcileech. I know there are many market gimmicks about non-pcileech solutions, so use your brain and don’t be fooled.</p>
 <hr>
-<h3>How to distinguish between <code class="notranslate">DATA Port</code> and <code class="notranslate">JTAG Port</code>?</h3>
-<p>Typically, there will be markings on the DMA card. If there are none, generally, the port closest to the gold finger is the JTAG port, while the one farthest from it is the DATA port.</p>
-<hr>
 <h3>What is <code class="notranslate">Activator</code>? /How is the <code class="notranslate">Activator</code> working?/What is the subscription model of DMA firmware?</h3>
-<p>tobedone</p>
+<p>The Activator is a necessary software component for the subscription-based firmware, enabling the firmware to function by running the activator on a second PC.</p>
+<p>The subscription model of DMA firmware is an FPGA technology that requires developers to have a thorough understanding of firmware. It allows the firmware to receive the latest updates like software, rather than remaining static.</p>
+<hr>
+<h3>What is <code class="notranslate">Pooled Firmware</code>?</h3>
+<p>Pooled Firmware is a frequently discussed topic. To explain this, it is necessary to start with a brief overview of how developers or sellers generate firmware.</p>
+<p>Developers usually start by creating a project, such as my <a href="https://github.com/kilmu1337/pcileech-rtl8188ee-wifi-emul">GitHub project</a>. After that, they can continuously generate firmware simply by changing the DNA ID. Some sellers typically have only one project and keep generating firmware from it, but they claim that each firmware is unique, which is nothing more than a scam.</p>
+<p>In fact, Pooled Firmware is a false proposition. It only applies to certain projects where a seller generates network card firmware for customers with the same MAC address and DSN. Since all emulations originate from real existing devices, it is impossible for a network card to have both the same MAC address and DSN simultaneously. This allows AC (Anti-Cheat) to determine that it is DMA.</p>
+<p>For non-network card firmware, there is no MAC address or DSN, making it difficult to determine if it is DMA unless it is widely recognized by most AC systems worldwide.</p>
 <hr>
 <h3>What is <code class="notranslate">1:1 Firmware</code>?</h3>
-<p>tobedone</p>
+<p>1:1 Firmware means that the configuration space is identical to that of a real device.</p>
 <hr>
 <h3>What is <code class="notranslate">Interrupts</code>?</h3>
-<p>tobedone</p>
+<h2>Interrupts can be viewed using projects like drvscan. People often jokingly say that "firmware is breathing"  XD because interrupts make the device appear active, making it behave more like a real device.</h2>
+<h3>How to distinguish between <code class="notranslate">DATA Port</code> and <code class="notranslate">JTAG Port</code>?</h3>
+<p>Typically, there will be markings on the DMA card. If there are none, generally, the port closest to the gold finger is the JTAG port, while the one farthest from it is the DATA port.</p>
 <hr></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
