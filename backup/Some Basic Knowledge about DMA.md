@@ -31,6 +31,7 @@ For non-network card firmware, there is no MAC address or DSN, making it difficu
 ### What is `Interrupts`? 
 
 Interrupts can be viewed using projects like drvscan. People often jokingly say that "firmware is breathing"  XD because interrupts make the device appear active, making it behave more like a real device.
+
 ---
 
 ### How to distinguish between `DATA Port` and `JTAG Port`?
