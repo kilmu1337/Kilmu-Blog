@@ -93,7 +93,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> If using the activator, check if run activator when dma on data port.</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Double click the emul device in device manager, check -&gt;Power Management(if has) -&gt;Untick "Allow this computer to turn off this device to save power") to avoid the BME OFF by main pc os.</li>
 </ul>
-<p>to be done</p></div>
+<h3>How to solve <code class="notranslate">FPGA: ERROR: Unable to connect to USB/FT601 device</code> when run speed test</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/57aa54aa-eabe-4169-854a-3512227c55ea"><img src="https://github.com/user-attachments/assets/57aa54aa-eabe-4169-854a-3512227c55ea" alt="Image" style="max-width: 100%;"></a></p>
+<p>This issue means there is a problem between your USB cable and the data port.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check if it’s in the data port.</li>
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Check this part: <code class="notranslate">DMA card data port</code> ⇄ <code class="notranslate">usb cable</code> ⇄ <code class="notranslate">radar pc's usb port</code>, try to unplug and plug the cable and port.</li>
+</ul></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>

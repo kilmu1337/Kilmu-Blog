@@ -17,6 +17,10 @@
 - [x] If using the activator, check if run activator when dma on data port.
 - [x] Double click the emul device in device manager, check ->Power Management(if has) ->Untick "Allow this computer to turn off this device to save power") to avoid the BME OFF by main pc os.
 
-to be done
+### How to solve `FPGA: ERROR: Unable to connect to USB/FT601 device` when run speed test
 
+![Image](https://github.com/user-attachments/assets/57aa54aa-eabe-4169-854a-3512227c55ea)
 
+This issue means there is a problem between your USB cable and the data port.
+- [x] Check if it’s in the data port.
+- [x] Check this part: `DMA card data port` ⇄ `usb cable` ⇄ `radar pc's usb port`, try to unplug and plug the cable and port.
