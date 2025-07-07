@@ -92,18 +92,18 @@ Discord： <a href="https://discord.gg/KilmuDMA" rel="nofollow">https://discord.
 <ul>
 <li>[1] 第一种情况：下拉栏中有 <strong>Quad RS232-HS(Interface 0)</strong> ，选择它并点击 <strong>Install Driver</strong> 或者 <strong>Replace Driver</strong> ，这里注意要选择 <strong>”Interface 0“</strong> ，别选错了。</li>
 </ul>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6f3094fb-437f-4cc8-b509-b30fad6c4025"><img src="https://github.com/user-attachments/assets/6f3094fb-437f-4cc8-b509-b30fad6c4025" alt="rs232-35t.png" style="max-width: 100%; height: auto;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6f3094fb-437f-4cc8-b509-b30fad6c4025"><img src="https://github.com/user-attachments/assets/6f3094fb-437f-4cc8-b509-b30fad6c4025" alt="rs232-35t.png" style="max-width: 100%;"></a></p>
 <p>驱动安装完之后，到 <strong>Flash Tools</strong> 文件夹中双击 <strong>#####flash_rs232_35t#####.bat</strong> 这个脚本，正确的烧录过程应该是会出现很多sector xx took xxxms，ms前的数字应该是个几十到几百的范围（如果是个位数甚至0ms、1ms，请关闭并重新打开，直到sector后面ms正常为止），然后在最后一个sector会卡一下，之后出现success就是烧录完成</p>
 <p>烧录完成后必须关机断电，然后开机(不要直接点重启)</p>
 <ul>
 <li>[2] 第二种情况：下拉栏中有 <strong>Single RS232-HS</strong> ，选择它并点击 <strong>Install Driver</strong> 或者 <strong>Replace Driver</strong><br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fd1a689a-a369-4dac-86f4-c2193e2ef045"><img src="https://github.com/user-attachments/assets/fd1a689a-a369-4dac-86f4-c2193e2ef045" alt="rs232-75t.png" style="max-width: 100%; height: auto;"></a></li>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fd1a689a-a369-4dac-86f4-c2193e2ef045"><img src="https://github.com/user-attachments/assets/fd1a689a-a369-4dac-86f4-c2193e2ef045" alt="rs232-75t.png" style="max-width: 100%;"></a></li>
 </ul>
 <p>驱动安装完之后，到 <strong>Flash Tools</strong> 文件夹中双击 <strong>#####flash_rs232_75t#####.bat</strong> 这个脚本，正确的烧录过程应该是会出现很多sector xx took xxxms，ms前的数字应该是个几十到几百的范围（如果是个位数甚至0ms、1ms，请关闭并重新打开，直到sector后面ms正常为止），然后在最后一个sector会卡一下，之后出现success就是烧录完成</p>
 <p>烧录完成后必须关机断电，然后开机(不要直接点重启)</p>
 <ul>
 <li>[3] 第三种情况：下拉栏中出现 <strong>USB To UART+JTAG(Interface 0)</strong><br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e2c1c606-fbe6-4528-b6b1-4bf02eac846d"><img src="https://github.com/user-attachments/assets/e2c1c606-fbe6-4528-b6b1-4bf02eac846d" alt="m2nnd415.png" style="max-width: 100%; height: auto;"></a></li>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e2c1c606-fbe6-4528-b6b1-4bf02eac846d"><img src="https://github.com/user-attachments/assets/e2c1c606-fbe6-4528-b6b1-4bf02eac846d" alt="m2nnd415.png" style="max-width: 100%;"></a></li>
 </ul>
 <p>这种情况需要关闭zadig-2.5.exe，返回到<strong>ch347 driver needed</strong>目录下，再双击 <strong>CH341PAR</strong> 目录下的 <strong>SETUP.EXE</strong> ，点击安装来完成烧录口驱动的安装。</p>
 <p>驱动安装完之后：<br>
